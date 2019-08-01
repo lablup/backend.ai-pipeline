@@ -1,0 +1,6 @@
+[general]
+#apiEndpoint = ""
+#apiEndpointText = ""
+#defaultSessionEnvironment = ""
+siteDescription = "Development"
+connectionMode = API

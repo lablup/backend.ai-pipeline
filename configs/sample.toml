@@ -1,0 +1,6 @@
+[general]
+apiEndpoint = "https://localhost:8081"
+apiEndpointText = "Example site"
+defaultSessionEnvironment = "index.docker.io/lablup/ngc-tensorflow"
+siteDescription = "Sample Config"
+connectionMode = "API"
