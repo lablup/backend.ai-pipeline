@@ -31,7 +31,7 @@ import 'weightless/select';
 import 'weightless/progress-spinner';
 
 import '../lib/backend.ai-client-es6.js';
-import {BackendAiStyles} from './backend-ai-pipeline-styles';
+import {BackendAiStyles} from './backend-ai-console-styles';
 import {
   IronFlex,
   IronFlexAlignment,
@@ -426,10 +426,12 @@ class BackendAiPipeline extends connect(store)(LitElement) {
                   Sessions
                 </paper-item>
               </a>
-              <paper-item disabled>
+              <a ?selected="${this._page === 'experiment'}" href="/experiment" tabindex="-1" role="menuitem">
+              <paper-item link>
                 <iron-icon class="fg blue" icon="icons:pageview"></iron-icon>
                 Experiments
               </paper-item>
+	      </a>
               <a ?selected="${this._page === 'data'}" href="/data" tabindex="-1" role="menuitem">
                 <paper-item link>
                   <iron-icon class="fg orange" icon="vaadin:folder-open-o"></iron-icon>
@@ -449,7 +451,7 @@ class BackendAiPipeline extends connect(store)(LitElement) {
             <div id="sidebar-navbar-footer" class="vertical center center-justified layout">
               <address>
                 <small class="sidebar-footer">Lablup Inc.</small>
-                <small class="sidebar-footer" style="font-size:9px;">19.07.2.190725</small>
+                <small class="sidebar-footer" style="font-size:9px;">19.09.0-alpha.1.190904</small>
               </address>
             </div>
           </app-header-layout>
