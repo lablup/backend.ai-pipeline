@@ -29,7 +29,7 @@ Backend.AI pipeline uses `config.toml` located in root directory.
 
 These are options in `config.toml`.
 
-```
+```toml
 [general]
 apiEndpoint = [Default API Endpoint. If blank, user input field will be shown.]
 apiEndpointText = [Placeholder text instead of API endpoint input field.]
@@ -42,22 +42,29 @@ proxyBaseURL = [Base URL of websocket proxy,]
 proxyListenIP = [Websocket proxy configuration IP.]
 ```
 
+At first, copy the sample and modify it:
+
+```console
+$ cp config.sample.toml config.toml
+$ edit config.toml
+```
+
 ## Development Guide
 
-Backend.AI pipeline is built with  
+Backend.AI pipeline is built with
  * `litelement` / `Polymer 3 `as webcomponent framework
  * `npm` as package manager
  * `rollup` as bundler
 
 ### Initializing
 
-```
+```console
 $ npm i
 ```
 
 ### Developing / testing without bundling
 
-```
+```console
 $ npm run server:d # To run dev. web server
 ```
 
@@ -65,7 +72,7 @@ $ npm run server:d # To run dev. web server
 
 ### Preparing bundled source
 
-```
+```console
 $ make compile
 ```
 
